@@ -1,0 +1,69 @@
+apiVersion: apps/v1 # for versions before 1.8.0 use apps/v1beta1
+kind: Deployment
+metadata:
+  name: feedstarter-deployment
+spec:
+  selector:
+    matchLabels:
+      app: feedstarter
+  replicas: 2 # tells deployment to run # pods matching the template
+  template: # create pods using pod definition in this template
+    metadata:
+      labels:
+        app: feedstarter
+# This label is used to identify the service to Orleans
+        orleans/serviceId: feedstarter-app
+
+        # This label is used to identify an instance of a cluster to Orleans.
+        # Typically, this will be the same value as the previous label, or any
+        # fixed value.
+        # In cases where you are not using rolling deployments (for example,
+        # blue/green deployments),
+        # this value can allow for distinct clusters which do not communicate
+        # directly with each others,
+        # but which still share the same storage and other resources.
+        orleans/clusterId: feeder
+    spec:
+      containers:
+      - name: feedstarter
+        image: feedstarter:1.0.0
+        imagePullPolicy: Never
+        env:
+          - name: POD_NAMESPACE
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.namespace
+          - name: POD_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
+          - name: POD_IP
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP
+          - name: ORLEANS_SERVICE_ID
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.labels['orleans/serviceId']
+          - name: ORLEANS_CLUSTER_ID
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.labels['orleans/clusterId']
+          - name: ASPNETCORE_URLS
+            value: http://+:5002
+          - name: "ConnectionStrings__Redis"
+            value: "10.1.8.75:6379"
+        ports:
+
+        - containerPort: 5002
+        - containerPort: 5001
+        - containerPort: 11111
+        - containerPort: 30000
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 250m
+            memory: 256Mi

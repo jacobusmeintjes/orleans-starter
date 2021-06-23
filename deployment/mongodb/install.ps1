@@ -1,0 +1,1 @@
+kubectl -f ./deployment.yaml apply

@@ -1,0 +1,142 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>feed_siloclient</RootNamespace>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.7" />
+        <PackageReference Include="Microsoft.Orleans.Client" Version="3.4.3" />
+        <PackageReference Include="Microsoft.Orleans.Hosting.Kubernetes" Version="3.4.3" />
+        <PackageReference Include="Microsoft.Orleans.OrleansRuntime" Version="3.4.3" />
+        <PackageReference Include="Orleans.Clustering.Redis" Version="3.1.1" />
+        <PackageReference Include="Orleans.Persistence.Redis" Version="3.1.1" />
+        <PackageReference Include="OrleansDashboard" Version="3.1.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\feed-grain\feed-grain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\web.config" />
+      <_ContentIncludedByDefault Remove="publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\appsettings.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.deps.json" />
+      <_ContentIncludedByDefault Remove="publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\feed-siloclient.runtimeconfig.json" />
+    </ItemGroup>
+
+</Project>

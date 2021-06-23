@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "feed-silo", "src\feed-silo\feed-silo.csproj", "{D2047BF9-AA73-4CA9-8DF0-6AB567173F0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SiloClient", "SiloClient", "{209FCD1E-B727-4789-B83D-1DF06AD21155}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grains", "Grains", "{4C81DC74-B7F0-44F4-831A-DC1E4C7D9C21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoHost", "CoHost", "{D5C76115-58B1-4249-AE79-9235B4293A57}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "feed-client", "src\feed-client\feed-client.csproj", "{91497A42-9122-4367-A9A2-86854DE2AD42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "feed-grain", "src\feed-grain\feed-grain.csproj", "{D23BAC6B-BF3E-4028-972C-7FD8628C3BD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "feed-siloclient", "src\feed-siloclient\feed-siloclient.csproj", "{4A0C5A3B-18EF-4DDE-A151-2D154A0F3F0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{28655580-E47C-44F4-8B4F-CBBE6E9CBECD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "feed-siloclient", "feed-siloclient", "{75C20558-6815-4D5B-B0B8-4DC97590796C}"
+ProjectSection(SolutionItems) = preProject
+	deployment\feed-siloclient\deployment.yaml = deployment\feed-siloclient\deployment.yaml
+	deployment\feed-siloclient\install.ps1 = deployment\feed-siloclient\install.ps1
+	deployment\feed-siloclient\role.yaml = deployment\feed-siloclient\role.yaml
+	deployment\feed-siloclient\services.yaml = deployment\feed-siloclient\services.yaml
+	deployment\feed-siloclient\uninstall.ps1 = deployment\feed-siloclient\uninstall.ps1
+	deployment\feed-siloclient\update.ps1 = deployment\feed-siloclient\update.ps1
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "redis", "redis", "{578FE640-3517-4544-86A3-0A9A32348D41}"
+ProjectSection(SolutionItems) = preProject
+	deployment\redis\deployment.yaml = deployment\redis\deployment.yaml
+	deployment\redis\install.ps1 = deployment\redis\install.ps1
+	deployment\redis\uninstall.ps1 = deployment\redis\uninstall.ps1
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postgresql", "postgresql", "{FC941753-C128-4890-8E91-013CAE8741DB}"
+ProjectSection(SolutionItems) = preProject
+	deployment\postgresql\deployment.yaml = deployment\postgresql\deployment.yaml
+	deployment\postgresql\install.ps1 = deployment\postgresql\install.ps1
+	deployment\postgresql\uninstall.ps1 = deployment\postgresql\uninstall.ps1
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mongodb", "mongodb", "{FD4D0B5C-7FBC-4456-B87F-0FD66C206528}"
+ProjectSection(SolutionItems) = preProject
+	deployment\mongodb\deployment.yaml = deployment\mongodb\deployment.yaml
+	deployment\mongodb\install.ps1 = deployment\mongodb\install.ps1
+	deployment\mongodb\uninstall.ps1 = deployment\mongodb\uninstall.ps1
+EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2047BF9-AA73-4CA9-8DF0-6AB567173F0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2047BF9-AA73-4CA9-8DF0-6AB567173F0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2047BF9-AA73-4CA9-8DF0-6AB567173F0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2047BF9-AA73-4CA9-8DF0-6AB567173F0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91497A42-9122-4367-A9A2-86854DE2AD42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91497A42-9122-4367-A9A2-86854DE2AD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91497A42-9122-4367-A9A2-86854DE2AD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91497A42-9122-4367-A9A2-86854DE2AD42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D23BAC6B-BF3E-4028-972C-7FD8628C3BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D23BAC6B-BF3E-4028-972C-7FD8628C3BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D23BAC6B-BF3E-4028-972C-7FD8628C3BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D23BAC6B-BF3E-4028-972C-7FD8628C3BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A0C5A3B-18EF-4DDE-A151-2D154A0F3F0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A0C5A3B-18EF-4DDE-A151-2D154A0F3F0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A0C5A3B-18EF-4DDE-A151-2D154A0F3F0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A0C5A3B-18EF-4DDE-A151-2D154A0F3F0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D2047BF9-AA73-4CA9-8DF0-6AB567173F0D} = {209FCD1E-B727-4789-B83D-1DF06AD21155}
+		{91497A42-9122-4367-A9A2-86854DE2AD42} = {209FCD1E-B727-4789-B83D-1DF06AD21155}
+		{D23BAC6B-BF3E-4028-972C-7FD8628C3BD9} = {4C81DC74-B7F0-44F4-831A-DC1E4C7D9C21}
+		{4A0C5A3B-18EF-4DDE-A151-2D154A0F3F0B} = {D5C76115-58B1-4249-AE79-9235B4293A57}
+		{75C20558-6815-4D5B-B0B8-4DC97590796C} = {28655580-E47C-44F4-8B4F-CBBE6E9CBECD}
+		{578FE640-3517-4544-86A3-0A9A32348D41} = {28655580-E47C-44F4-8B4F-CBBE6E9CBECD}
+		{FC941753-C128-4890-8E91-013CAE8741DB} = {28655580-E47C-44F4-8B4F-CBBE6E9CBECD}
+		{FD4D0B5C-7FBC-4456-B87F-0FD66C206528} = {28655580-E47C-44F4-8B4F-CBBE6E9CBECD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D00EED83-B3C1-4002-9B85-96359D52E53A}
+	EndGlobalSection
+EndGlobal
